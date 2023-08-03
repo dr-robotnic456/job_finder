@@ -5,7 +5,7 @@ import Link from 'next/link';
 function Card({ id, title, employmentType, company, location, icon }) {
     return (
         <Link href={`/job/${id}`}>
-        <fieldset className='card relative bg-white md:w-[300px] xsm:w-[300px] mb-3 justify-center items-center h-[228px] rounded-lg border-none max-w-[400px] text-black p-5 shadow-lg dark:bg-[#19202D] flex-grow'>
+        <fieldset className='card relative bg-white md:w-[350px] xsm:w-[350px] mb-3 justify-center items-center h-[228px] rounded-lg border-none max-w-[400px] text-black p-5 shadow-lg dark:bg-[#19202D] flex-grow'>
             <legend className='card-image bg-none h-[40px] w-[40px]'>
                 <Image src={`/${icon}`} width={40} height={40} objectFit='cover' />
             </legend>
