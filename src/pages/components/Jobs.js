@@ -13,8 +13,8 @@ const Jobs = ({ showFilter, triggerFilter, result }) => {
 
       </div>
       {isResultEmpty && (
-        <div className='flex justify-center items-center h-full'>
-          <p className='text-gray-500'>No jobs found.</p>
+        <div className='flex justify-center items-center h-screen'>
+          <p className='text-gray-500 font-bold text-xl'>No jobs found.</p>
         </div>
       )}
       {!isResultEmpty && (
