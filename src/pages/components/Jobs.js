@@ -7,7 +7,7 @@ const Jobs = ({ showFilter, triggerFilter, result }) => {
 
   return (
     <div className={`xsm:w-[80%] sm:w-4/5 md:w-[90%] w-[90%] relative ${isResultEmpty ? 'h-screen' : ''}`}>
-      <div className='flex flex-wrap justify-center gap-2 after:w-[250px] after:h-[228px]' onClick={triggerFilter}>
+      <div className='flex flex-wrap justify-center gap-4 after:w-[250px] after:h-[228px]' onClick={triggerFilter}>
         {showFilter && <Filter triggerFilter={triggerFilter} />}
 
         {result}
