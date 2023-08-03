@@ -1,9 +1,8 @@
 import React from 'react';
-import Card from './Card';
 import Filter from './Filter';
 
 const Jobs = ({ showFilter, triggerFilter, result }) => {
-  const isResultEmpty = result.length === 0;
+  const isResultEmpty = result && result.length === 0;
 
   return (
     <div className={`xsm:w-[80%] sm:w-4/5 md:w-[90%] w-[90%] relative ${isResultEmpty ? 'h-screen' : ''}`}>
