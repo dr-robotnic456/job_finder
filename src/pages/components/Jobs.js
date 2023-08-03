@@ -1,11 +1,12 @@
 import React from 'react';
+import Card from './Card';
 import Filter from './Filter';
 
 const Jobs = ({ showFilter, triggerFilter, result }) => {
   const isResultEmpty = result.length === 0;
 
   return (
-    <div className={`xsm:w-[80%] sm:w-4/5 md:w-[85%] w-[90%] relative ${isResultEmpty ? 'h-screen' : ''}`}>
+    <div className={`xsm:w-[80%] sm:w-4/5 md:w-[90%] w-[90%] relative ${isResultEmpty ? 'h-screen' : ''}`}>
       <div className='flex flex-wrap justify-center gap-2 after:w-[250px] after:h-[228px]' onClick={triggerFilter}>
         {showFilter && <Filter triggerFilter={triggerFilter} />}
 
